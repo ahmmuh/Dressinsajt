@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dressing Cykling</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Menu starts -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top"
+      id="top-menu"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Dressingcykling</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Hem</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">Mat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="where.html">Var</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Karta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="security.html">Säkerhet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="images.html">Bilder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Historik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="allemansratten.html">Allemansrätten</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section with bike image -->
+    <!-- main container -->
+    <main id="info-section" class="pt-5">
+      <div class="container info-content p-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <div>
+              <h2 class="text-primary">Mat och dryck?</h2>
+              <p>
+                Mat och dryck kan vi också tillhandahålla om det förbokas
+                (separat från dressinbokningen). Ni kan få det uppdukat vid
+                långbord på vår rastplats. Vi säljer även glass och dricka i vår
+                kiosk. Gå in på vår mat-sida för mer info. Men givetvis går det
+                också bra att ta med egen fika att avnjuta vid vår rastplats
+                eller på en filt i det gröna. Vid rastplatsen finns även
+                grillmöjligheter, eget kol måste dock medtagas. I närheten av
+                rastplatsen finns också cafè Systrarna på Solhjulet, <br />
+                Öppet torsdag-måndag 11-17 under sommaren (tis-ons stängt)
+              </p>
+            </div>
+            <div>
+              <h2 class="text-primary">Presentkort!</h2>
+              <p>
+                Gör någon glad med ett presentkort! Vårt presentkort kan köpas
+                på plats i Björnstorp eller skickas hem till dig, betalning sker
+                med medföljande faktura i det senare fallet. Presentkortet är
+                inte personligt och gäller för överskådlig tid. Värdet blir
+                hyran av det antal dressiner du väljer. Klicka på bilden för att
+                se presentkortet i full skala.
+              </p>
+            </div>
+
+            <div id="accordion">
+              <h3 class="text-primary pb-3">Vanliga frågor & svar</h3>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Hur lång tid tar det?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Att cykla hela sträckan fram och tillbaka utan stopp, tar
+                    ungefär 1½-2 timmar. Så det finns gott om tid till rast och
+                    vila under ett pass.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Är det jobbigt?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Nej, det är lika lätt som att cykla en vanlig cykel.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Vad gör man om det regnar?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Vädret rår man ju inte över. Så om ni absolut vill ställa in
+                    i sista minuten, pga dåligt väder, så är vi överseende med
+                    det. Men ring alltid och avboka i så fall.
+                  </div>
+                </div>
+              </div>
+
+              <!-- four -->
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="true"
+                      aria-controls="collapseFour"
+                    >
+                      Hur lång tid innan bokad tid bör man vara på plats i
+                      Björnstorp?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    5-10 minuter innan är det bra om ni är där. Innan ni får
+                    cykla iväg så vill vi först ha en liten genomgång av
+                    säkerhetsregler och allmän information.
+                  </div>
+                </div>
+              </div>
+
+              <!-- five question -->
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                      aria-expanded="true"
+                      aria-controls="collapseFive"
+                    >
+                      Var ligger rastplatsen och kan man köra bil dit?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Rastplatsen ligger på ca halva sträckan, vid en övergång av
+                    en asfaltsväg. Det går alltså att köra bil dit. Vägen är den
+                    som går mellan Veberöd och Genarp. Om man kommer från
+                    Malmö/Lund så kör man på väg 11 förbi skylten
+                    Björnstorp/Dressincykling och fortsätter ca 3 km mot Sjöbo.
+                    Där tar man höger mot Genarp just innan Veberöd, och efter
+                    500 meter är man framme. Du kan också se var rastplatsen
+                    ligger på vår <a class="secondary" href="map.html">Karta</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sex question -->
+              <div class="card">
+                <div class="card-header" id="headingSex">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseSex"
+                      aria-expanded="true"
+                      aria-controls="collapseSex"
+                    >
+                      Finns det någon toalett?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseSex"
+                  class="collapse"
+                  aria-labelledby="headingSex"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Ja, det finns en utedassaktig vid rastplatsen och en
+                    bajamaja vid startpunkten i Björnstorp.
+                  </div>
+                </div>
+              </div>
+
+              <!-- seven question-->
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseSeven"
+                      aria-expanded="true"
+                      aria-controls="collapseSeven"
+                    >
+                      Finns det någon toalett?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseSeven"
+                  class="collapse"
+                  aria-labelledby="headingSeven"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Ja, det finns en utedassaktig vid rastplatsen och en
+                    bajamaja vid startpunkten i Björnstorp.
+                  </div>
+                </div>
+              </div>
+
+              <!-- eight question -->
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseEight"
+                      aria-expanded="true"
+                      aria-controls="collapseEight"
+                    >
+                      Går spåret runt?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseEight"
+                  class="collapse"
+                  aria-labelledby="headingEight"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Nej, man cyklar fram och tillbaka samma sträcka mellan
+                    Björnstorp och Veberöd.
+                  </div>
+                </div>
+              </div>
+
+              <!-- nine question -->
+              <div class="card">
+                <div class="card-header" id="headingNine">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseNine"
+                      aria-expanded="true"
+                      aria-controls="collapseNine"
+                    >
+                      Finns det risk att vi möter X2000?
+                    </button>
+                  </h5>
+                </div>
+
+                <div
+                  id="collapseNine"
+                  class="collapse"
+                  aria-labelledby="headingNine"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">Inte troligt...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <ul class="list-group">
+              <h5>När?</h5>
+              <li class="list-group-item">Säsong:April - 0ktober</li>
+              <li class="list-group-item">Pass 1: 9:00 - 12:45</li>
+              <li class="list-group-item">Pass 2: 13:45 -16:45</li>
+              <li class="list-group-item">Pass 3: 17:45 - 20:45</li>
+              <li class="list-group-item">Öppet: dagligen</li>
+            </ul>
+            <div class="p-2">
+              <h5>Pris?</h5>
+              <p>
+                <b>300 kronor</b> per dressin och pass.
+                <b>2500 kronor för hela tåget</b>, 10 dressiner. På en dressin
+                kan maximalt 2 vuxna och ett barn sitta. Handbagage kan
+                medtagas. Frivillig tilläggsförsäkring för självriskeliminering:
+                35 kr/dressin. Priserna är inklusive moms.
+              </p>
+            </div>
+            <div class="p-2">
+              <h5>Bokning?</h5>
+              <p>
+                Ring för bokning och info. <br />
+                0705-747622
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main section with bike image ends-->
+
+    <!-- gallery section -->
+
+    <section class="gallery mb-0 pb-2">
+      <div class="container w-75">
+        <h2 class="h1 text-center text-primary p-3">
+          <i class="fab fa-instagram p-2"></i>Följ oss på Instagram
+        </h2>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img
+              src="./images/gallery1.jpeg"
+              class="img-fluid"
+              alt="Gallery img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img
+              src="./images/gallery2.jpeg"
+              class="img-fluid"
+              alt="Gallery img"
+            />
+          </div>
+
+          <div class="col-lg-3 col col-md-6 col-sm-12 pb-1">
+            <img
+              src="./images/gallery3.jpeg"
+              class="img-fluid"
+              alt="Gallery img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img
+              src="./images/gallery4.jpeg"
+              class="img-fluid"
+              alt="Gallery img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- gallery section end -->
+    </section>
+    <!-- main container ends -->
+
+    <!-- main footer -->
+    <section class="main-footer">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos cumque ea quos, velit nisi placeat esse, ipsa
+              praesentium doloribus hic, fuga libero unde voluptatibus. At
+              provident et tempora! Minima, alias. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ut quas doloribus obcaecati nihil
+              earum at, possimus neque. Velit sit dolorum tempora, sed cum
+              praesentium assumenda nisi repellat corrupti hic repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main footer ends -->
+
+    <!-- footer starts -->
+    <footer class="bg-dark p-4 text-light" id="footer">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <a class="navbar-brand" href="#">Dressing Cykling</a>
+            <p>Björnstorp 751</p>
+            <p>Genarp 247 98 Sweden</p>
+            <p>
+              <a href="tel:+4670-574 76 22" class="text-decoration-none"
+                >Ring oss</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-facebook rounded"></i>
+              <i class="fab fa-instagram-square rounded"></i>
+            </p>
+          </div>
+
+          <div class="col">
+            <h4>Länkar</h4>
+            <div class="bottom-menu">
+              <ul class="list-group">
+                <li class="list-group-item border-0">
+                  <a href="index.html">Hem</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="info.html">Info</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="food.html">Mat</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="where.html">Var</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="map.html">Karta</a>
+                </li>
+              </ul>
+              <ul class="list-group">
+                <li class="list-group-item border-0">
+                  <a href="#">Säkerhet</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="images.html">Bilder</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="history.html">Historik</a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="allemansratten.html">Allemansrätten</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <h4>Nyhetsbrev</h4>
+
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="namn:"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="e-post"
+                  class="form-control"
+                />
+              </div>
+              <button class="btn btn-primary mt-1">Skicka in</button>
+            </form>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col text-center py-5">
+            <p>&copy; Romeleåsenes Dressingcykling</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section ends-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
