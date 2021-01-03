@@ -45,10 +45,50 @@ body {
   height: 13rem;
   padding: 0.5rem;
 }
-#gallery-section #gallery-container .row .col {
-  /* width: 100%;
-      background-color: red; */
+.gallery-images .wrap-image {
+  position: relative;
+  cursor: pointer;
+  opacity: 0.9;
 }
+.wrap-image .img-description {
+  text-align: center;
+  padding: 1rem;
+  top: 10;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  visibility: hidden;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-size: 1.2rem;
+}
+.wrap-image:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* food section */
+#food-section {
+  margin-top: 12%;
+}
+
+/* Historik sida */
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
 .main-footer {
   background-image: linear-gradient(
       rgb(163, 157, 157),
