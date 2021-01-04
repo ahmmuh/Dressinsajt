@@ -20,7 +20,7 @@ li {
   flex-direction: column;
 }
 .logo .navbar-brand {
-  color: blue;
+  color: rgba(113, 113, 235, 0.918);
   font-weight: 700;
 }
 
@@ -41,6 +41,7 @@ li {
   background-attachment: fixed;
   height: 80vh;
   opacity: 1;
+  
 }
 
 .gallery {
