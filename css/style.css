@@ -4,17 +4,43 @@
   border: 0;
 }
 
-body {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
   font-family: "Roboto", sans-serif;
 }
+.logo {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.logo .navbar-brand {
+  color: blue;
+  font-weight: 700;
+}
 
+.navbar ul li a {
+  text-transform: uppercase;
+}
+.navbar-light .nav-item > .nav-link {
+  color: #222;
+}
+.navbar-light .nav-item > .nav-link.active {
+  color: blue;
+}
 #header {
-  background-image: url(https://images.unsplash.com/photo-1590895871464-ed8d62beda90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 80vh;
+  opacity: 1;
 }
 
 .gallery {
@@ -67,9 +93,7 @@ body {
 }
 
 /* food section */
-#food-section,
-.allemansratt,
-.gallery-images {
+.content-top-margin {
   margin-top: 8rem;
 }
 
@@ -87,7 +111,11 @@ blockquote p {
 blockquote p::before {
   content: "\201C";
 }
-
+/* map */
+#map {
+  height: 80vh;
+  margin-bottom: 1rem;
+}
 .main-footer {
   background-image: linear-gradient(
       rgb(163, 157, 157),
@@ -116,6 +144,9 @@ footer a {
 }
 .copyright {
   border-top: 1px solid silver;
+}
+form .form-group input {
+  background-color: transparent;
 }
 /* media query */
 

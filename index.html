@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -29,7 +33,10 @@
       id="top-menu"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">Dressingcykling</a>
+        <div class="logo">
+          <p class="mb-0">Romeleåsens</p>
+          <a class="navbar-brand py-0 " href="index.html">Dressingcykling</a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -84,8 +91,12 @@
     <header id="header" class="mb-5 py-5">
       <div class="container">
         <div class="text-light text-center py-5">
-          <h1>Dressing Cykling på Romeneåsen</h1>
-          <p class="h2">En naturupplevelse utöver det vanliga!</p>
+          <h1 class="animate__animated animate__pulse">
+            Dressing Cykling på Romeneåsen
+          </h1>
+          <p class="h2 animate__animated animate__pulse">
+            En naturupplevelse utöver det vanliga!
+          </p>
         </div>
       </div>
       <!-- boxes under header ends-->
@@ -180,40 +191,36 @@
 
     <!-- gallery section -->
 
-    <section class="gallery mb-0 pb-2">
+    <section class="gallery gallery-images">
       <div class="container w-75">
-        <h2 class="h1 text-center text-primary p-3">
+        <h2 class="h1 text-center text-primary">
           <i class="fab fa-instagram p-2"></i>Följ oss på Instagram
         </h2>
-        <div class="row mb-3">
+        <div class="row py-3">
           <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <img
-              src="./images/gallery1.jpeg"
-              class="img-fluid"
-              alt="Gallery img"
-            />
+            <img src="./images/bild1.jpg" class="img-fluid" alt="Gallery img" />
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <img
-              src="./images/gallery2.jpeg"
-              class="img-fluid"
-              alt="Gallery img"
-            />
+            <img src="./images/bild2.jpg" class="img-fluid" alt="Gallery img" />
           </div>
 
           <div class="col-lg-3 col col-md-6 col-sm-12 pb-1">
-            <img
-              src="./images/gallery3.jpeg"
-              class="img-fluid"
-              alt="Gallery img"
-            />
+            <img src="./images/bild3.jpg" class="img-fluid" alt="Gallery img" />
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <img
-              src="./images/gallery4.jpeg"
-              class="img-fluid"
-              alt="Gallery img"
-            />
+            <img src="./images/bild4.jpg" class="img-fluid" alt="Gallery img" />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img src="./images/bild5.jpg" class="img-fluid" alt="Gallery img" />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img src="./images/bild6.jpg" class="img-fluid" alt="Gallery img" />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img src="./images/bild7.jpg" class="img-fluid" alt="Gallery img" />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <img src="./images/bild8.jpg" class="img-fluid" alt="Gallery img" />
           </div>
         </div>
       </div>
@@ -322,7 +329,7 @@
         </div>
         <div class="row copyright mt-3">
           <div class="col text-center py-5">
-            <p>&copy; Romeleåsenes Dressingcykling</p>
+            <p>&copy; Romeleåsens Dressingcykling</p>
           </div>
         </div>
       </div>
@@ -340,5 +347,6 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
