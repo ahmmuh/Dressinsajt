@@ -10,17 +10,20 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Menu starts -->
@@ -29,7 +32,7 @@
       id="top-menu"
     >
       <div class="container">
-        <div class="logo">
+        <div id="logo">
           <p class="mb-0">Romeleåsens</p>
           <a class="navbar-brand py-0" href="index.html">Dressingcykling</a>
         </div>
@@ -46,7 +49,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" id="menu-list">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
                 >Hem</a
@@ -88,7 +91,7 @@
         <div class="row py-3">
           <div class="col-lg-8">
             <div>
-              <h2 class="text-primary">Mat och dryck?</h2>
+              <h4 class="text-primary">Mat och dryck?</h4>
               <p>
                 Mat och dryck kan vi också tillhandahålla om det förbokas
                 (separat från dressinbokningen). Ni kan få det uppdukat vid
@@ -102,7 +105,7 @@
               </p>
             </div>
             <div>
-              <h2 class="text-primary">Presentkort!</h2>
+              <h4 class="text-primary">Presentkort!</h4>
               <p>
                 Gör någon glad med ett presentkort! Vårt presentkort kan köpas
                 på plats i Björnstorp eller skickas hem till dig, betalning sker
@@ -113,8 +116,8 @@
               </p>
             </div>
 
-            <div id="accordion">
-              <h3 class="text-primary pb-3">Vanliga frågor & svar</h3>
+            <div id="accordion" class="pb-5">
+              <h4 class="text-primary pb-3">Vanliga frågor & svar</h4>
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
@@ -412,7 +415,7 @@
 
     <section class="gallery gallery-images">
       <div class="container w-75">
-        <h2 class="h1 text-center text-primary">
+        <h2 class="h1 text-center text-primary p-4">
           <i class="fab fa-instagram p-2"></i>Följ oss på Instagram
         </h2>
         <div class="row py-3">
@@ -453,13 +456,11 @@
         <div class="row p-5">
           <div class="col">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos cumque ea quos, velit nisi placeat esse, ipsa
-              praesentium doloribus hic, fuga libero unde voluptatibus. At
-              provident et tempora! Minima, alias. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Ut quas doloribus obcaecati nihil
-              earum at, possimus neque. Velit sit dolorum tempora, sed cum
-              praesentium assumenda nisi repellat corrupti hic repellendus!
+              Romeleåsen uppkom för miljarder år sedan och är ett arv för
+              skåningar att förvalta för framtida generationer. Därför är det
+              viktigt att miljöpåverkan blir den minsta tänkbara samtidigt som
+              vi har tillgång till denna fantastiska rekreationsmöjlighet. Detta
+              är verkligen ekoturism!!
             </p>
           </div>
         </div>
@@ -480,9 +481,13 @@
                 >Ring oss</a
               >
             </p>
-            <p>
-              <i class="fab fa-facebook rounded"></i>
-              <i class="fab fa-instagram-square rounded"></i>
+            <p class="icons">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook rounded"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
             </p>
           </div>
 
@@ -532,14 +537,16 @@
                   name="name"
                   placeholder="namn:"
                   class="form-control"
+                  required
                 />
               </div>
               <div class="form-group">
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="e-post"
                   class="form-control"
+                  required
                 />
               </div>
               <button class="btn btn-primary mt-1">Skicka in</button>
@@ -566,5 +573,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

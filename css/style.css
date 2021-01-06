@@ -14,14 +14,21 @@ h6,
 li {
   font-family: "Roboto", sans-serif;
 }
-.logo {
+
+#logo {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
-.logo .navbar-brand {
-  color: rgba(113, 113, 235, 0.918);
-  font-weight: 700;
+
+#logo .navbar-brand {
+  color: rgba(68, 68, 255, 0.972);
+  font-weight: 500;
+  margin-top: -0.5rem;
+}
+.navbar {
+  border-bottom: 0.1rem solid silver;
 }
 
 .navbar ul li a {
@@ -33,15 +40,27 @@ li {
 .navbar-light .nav-item > .nav-link.active {
   color: blue;
 }
+/* active menu class */
+.active {
+  color: blue !important;
+}
+/* scroll-menu */
+.scroll-menu {
+  background-color: rgb(111, 112, 111);
+  color: white;
+}
 #header {
-  background-image: url("../images/banner.jpg");
+  background-image: linear-gradient(
+      rgba(136, 119, 153, 0.609),
+      rgba(187, 221, 204, 0.931)
+    ),
+    url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 80vh;
-  opacity: 1;
-  
+  margin-top: 3rem;
 }
 
 .gallery {
@@ -87,6 +106,10 @@ li {
   opacity: 0;
   transition: opacity 0.2s, visibility 0.2s;
   font-size: 1.2rem;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  -moz-transition: opacity 0.2s, visibility 0.2s;
+  -ms-transition: opacity 0.2s, visibility 0.2s;
+  -o-transition: opacity 0.2s, visibility 0.2s;
 }
 .wrap-image:hover .img-description {
   visibility: visible;
@@ -119,18 +142,23 @@ blockquote p::before {
 }
 .main-footer {
   background-image: linear-gradient(
-      rgb(163, 157, 157),
-      rgba(98, 105, 98, 0.445)
+      rgba(51, 68, 85, 0.603),
+      rgba(19, 123, 139, 0.596)
     ),
-    url(https://images.unsplash.com/photo-1601373794354-033ded5edc9d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjV8fGZvcmVzdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    url(../images/main-footer.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  grid-template-rows: minmax(30rem, auto);
 }
 .main-footer .row {
-  width: 69%;
+  width: 70%;
   margin: 0 auto;
+}
+.main-footer .row .col p {
+  font-size: 1.2rem;
   color: white;
 }
 .bottom-menu {
@@ -143,12 +171,17 @@ blockquote p::before {
 footer a {
   color: white;
 }
+#footer a:hover {
+  color: white;
+}
 .copyright {
   border-top: 1px solid silver;
 }
-form .form-group input {
+form .form-group .form-control {
   background-color: transparent;
+  color: white;
 }
+
 /* media query */
 
 @media (min-width: 768px) {
@@ -174,9 +207,7 @@ form .form-group input {
     width: 70%;
     margin: 0 auto;
   }
-  #footer a:hover {
-    color: white;
-  }
+
   #footer .icons {
     background-color: transparent;
   }
