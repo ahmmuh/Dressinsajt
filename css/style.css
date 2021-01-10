@@ -3,7 +3,14 @@
   padding: 0;
   border: 0;
 }
-
+/* text-blue-color */
+.text-blue-color {
+  color: #458fe4;
+}
+.bg-blue {
+  background-color: #458fe4;
+  height: auto;
+}
 p,
 h1,
 h2,
@@ -23,7 +30,7 @@ li {
 }
 
 #logo .navbar-brand {
-  color: rgba(68, 68, 255, 0.972);
+  color: #458fe4;
   font-weight: 500;
   margin-top: -0.5rem;
 }
@@ -157,10 +164,15 @@ blockquote p::before {
   width: 70%;
   margin: 0 auto;
 }
+.bottom-links {
+  padding-left: 1.21rem;
+}
 .main-footer .row .col p {
   font-size: 1.2rem;
   color: white;
+  opacity: 0.8;
 }
+
 .bottom-menu {
   display: flex;
 }
