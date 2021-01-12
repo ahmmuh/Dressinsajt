@@ -44,13 +44,11 @@ li {
 .navbar-light .nav-item > .nav-link {
   color: #222;
 }
-.navbar-light .nav-item > .nav-link.active {
-  color: blue;
+ul.navbar-nav li.active a {
+  /* color: #458fe4 !important; */
+  color: red !important;
 }
-/* active menu class */
-.active {
-  color: blue !important;
-}
+
 /* scroll-menu */
 .scroll-menu {
   background-color: rgb(111, 112, 111);
