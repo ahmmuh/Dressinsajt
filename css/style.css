@@ -145,6 +145,8 @@ blockquote p::before {
   height: 80vh;
   margin-bottom: 1rem;
 }
+
+
 .main-footer {
   background-image: linear-gradient(
       rgba(51, 68, 85, 0.603),

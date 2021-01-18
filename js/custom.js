@@ -1,8 +1,12 @@
 $(document).ready(function () {
-  $("ul.navbar-nav > li").click(function (e) {
-    $("ul.navbar-nav > li").removeClass("active");
-    $(this).addClass("active");
+  var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+  $(".navbar-nav ul a").each(function () {
+    if (this.href === path) {
+      $(this).addClass("active");
+      console.log($(this).addClass("active"));
+    }
   });
+
   (function () {
     var gallery = $(".gallery-images .img-fluid");
     $.each(gallery, function (i, image) {
